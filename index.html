@@ -12,22 +12,70 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    :root {
+      --Pale-blue: hsl(225, 100%, 94%);
+      --Bright-blue: hsl(245, 75%, 52%);
+      --Very-pale-blue: hsl(225, 100%, 98%);
+      --Desaturated-blue: hsl(224, 23%, 55%);
+      --Dark-blue: hsl(223, 47%, 23%);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .container {
+        border: 1px solid black;
+        width: 400px;
+      }
+      .image {
+        background-image: url(./images/illustration-hero.svg);
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+      }
+          .contat{
+            width: 100%;
+            text-align: center;
+            padding: 30px;
+          }
   </style>
 </head>
 <body>
+ <div class="container">
+   <div class="image"></div>
+   <div class="contat">
+    <h1 class="title">Order Summary</h1>
+    <p>
+      You can now listen to millions of songs, audiobooks, and podcasts on any
+      device anywhere you like!
+    </p>
+    <div class="cardyear">
+      <span class="icon-music"></span>
+      <div class="price-year"><p class="title-price">Annual Plan</p>
+        <p class="price">$59.99/year</p>
+      </div>
+      <a href="#">Change</a>
+    </div>
+    <button class="btn">Proceed to Payment</button>
+    <p class="cancept"> Cancel Order</p>
+   </div>
+ 
+  
 
-  Order Summary
+ 
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
+  </div>
+  
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
